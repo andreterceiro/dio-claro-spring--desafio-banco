@@ -8,10 +8,13 @@ public class Main {
 
         Conta cc = new ContaCorrente(andre);
         Conta cp = new ContaPoupanca(papai);
+        Conta cpAndre = new ContaPoupanca(andre);
+
         cc.depositar(100);
         cc.transferir(10, cp);
 
         cc.imprimirExtrato();
         cp.imprimirExtrato();
+        cpAndre.imprimirExtrato();
     }
 }
