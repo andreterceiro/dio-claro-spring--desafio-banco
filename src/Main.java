@@ -10,11 +10,12 @@ public class Main {
         Conta cp = new ContaPoupanca(papai);
         Conta cpAndre = new ContaPoupanca(andre);
 
-        cc.depositar(100);
+        cc.depositar(100, true);
         cc.transferir(10, cp);
 
         cc.imprimirExtrato();
         cp.imprimirExtrato();
         cpAndre.imprimirExtrato();
+        cc.imprimirHistoricoOperacoes();
     }
 }
