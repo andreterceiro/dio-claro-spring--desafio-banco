@@ -14,4 +14,16 @@ public class ContaCorrente {
     public void transferir() {
 
     }
+
+    public int getAgencia() {
+        return this.agencia;
+    }
+
+    public int getNumero() {
+        return this.numero;
+    }
+
+    public double getSaldo() {
+        return this.saldo;
+    }
 }
