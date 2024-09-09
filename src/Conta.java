@@ -26,6 +26,12 @@ public abstract class Conta implements IConta {
         contaDestino.depositar(valor);
     }
 
+    public void imprimirInformacoesComuns() {
+        System.out.println("Agência: " + this.getAgencia());
+        System.out.println("Número: " + this.getNumero());
+        System.out.println("Saldo: " + this.getSaldo());
+    }
+
     public int getAgencia() {
         return this.agencia;
     }
